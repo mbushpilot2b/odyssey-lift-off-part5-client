@@ -5,7 +5,7 @@ import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: process.env.APOLLO_GRAPH_URL || "http://localhost:4000", // change to YOUR own production server
+  uri: "https://odyssey-lift-off-part5-server-production-115a.up.railway.app/", // change to YOUR own production server
   cache: new InMemoryCache(),
   name: "web",
   version: "1.0",
